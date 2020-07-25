@@ -1,0 +1,8 @@
+<p>instructor-create works!</p>
+
+<app-instructor-form
+  (save)="presenter.create($event)"
+  (cancel)="presenter.goBack()"
+>
+  <!-- [instructors]="presenter.instructors" -->
+</app-instructor-form>

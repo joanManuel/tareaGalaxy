@@ -1,0 +1,10 @@
+
+<div class="input-file">
+  <button mat-raised-button color="primary"
+          (click)="input.click()"
+          [disabled]="isDisabled">Seleccionar archivo</button>
+
+  <span>{{ name }}</span>
+</div>
+
+<input #input type="file" (change)="updateFile($event)" >

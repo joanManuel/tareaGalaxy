@@ -1,0 +1,10 @@
+<p>workshop-update works!</p>
+
+<glx-input-file></glx-input-file>
+
+<app-workshop-form
+  [workshop]="presenter.workshop"
+  [instructors]="presenter.instructors"
+  (save)="presenter.update($event)"
+  (cancel)="presenter.goBack()">
+</app-workshop-form>

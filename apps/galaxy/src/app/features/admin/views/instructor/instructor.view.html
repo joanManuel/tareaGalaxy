@@ -1,0 +1,13 @@
+<div class="title-container">
+  <button mat-icon-button routerLink="create">
+    <mat-icon>add</mat-icon>
+  </button>
+  <h1>Instructores</h1>
+</div>
+
+<app-instructor-table
+  [instructor]="presenter.instructor"
+  (edit)="presenter.goEditPage($event)"
+  (remove)="presenter.remove($event)"
+>
+</app-instructor-table>

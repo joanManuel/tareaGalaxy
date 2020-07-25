@@ -1,0 +1,19 @@
+<mat-sidenav-container>
+  <mat-sidenav-content>
+    <mat-toolbar class="mat-elevation-z8" color="primary">
+      <mat-toolbar-row>
+        <span>Custom Toolbar</span>
+    
+        <div>
+          <button mat-button routerLink="/admin" >
+            Iniciar Sesión
+          </button>
+          <mat-slide-toggle [(ngModel)]="themeService.isDark" >Oscuro</mat-slide-toggle>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

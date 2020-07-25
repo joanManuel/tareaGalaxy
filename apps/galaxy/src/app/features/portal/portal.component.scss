@@ -1,0 +1,19 @@
+$header-height: 56px;
+
+mat-toolbar {
+  min-height: $header-height;
+  mat-toolbar-row {
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+mat-sidenav-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}

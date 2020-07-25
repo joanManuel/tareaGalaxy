@@ -1,0 +1,21 @@
+<img [src]="workshop.poster | glxDefaultImg" >
+
+<div>
+  <h2>{{ workshop.name }}</h2>
+  <p>{{ workshop.description }}</p>
+  <mat-chip-list>
+    <mat-chip>
+      <mat-icon>event</mat-icon>
+      <span>Día {{ workshop.date }}</span>
+      <!--
+      <span>Día miércoles 01 julio</span>
+      -->
+    </mat-chip>
+    <mat-chip>
+      <mat-icon>query_builder</mat-icon>
+      <span>Hora {{ workshop.displayTime }}</span>
+    </mat-chip>
+  </mat-chip-list>
+  <br>
+  <button mat-raised-button color="primary">REGISTRARSE</button>
+</div>

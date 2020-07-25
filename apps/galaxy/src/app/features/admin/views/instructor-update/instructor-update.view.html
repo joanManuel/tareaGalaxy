@@ -1,0 +1,7 @@
+<p>instructor-update works!</p>
+<app-instructor-form
+  [instructor]="presenter.instructor"
+  (save)="presenter.update($event)"
+  (cancel)="presenter.goBack()"
+>
+</app-instructor-form>

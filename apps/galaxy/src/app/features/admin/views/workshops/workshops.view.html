@@ -1,0 +1,13 @@
+
+<div class="title-container">
+  <button mat-icon-button routerLink="create">
+    <mat-icon>add</mat-icon>
+  </button>   
+  <h1>Talleres</h1>
+</div>
+
+<app-workshops-table
+  [workshops]="presenter.workshops"
+  (edit)="presenter.goEditPage($event)"
+  (remove)="presenter.remove($event)">
+</app-workshops-table>

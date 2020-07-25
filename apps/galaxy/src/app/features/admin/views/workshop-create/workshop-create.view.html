@@ -1,0 +1,7 @@
+<p>workshop-create works!</p>
+
+<app-workshop-form
+  [instructors]="presenter.instructors"
+  (save)="presenter.create($event)"
+  (cancel)="presenter.goBack()">
+</app-workshop-form>
